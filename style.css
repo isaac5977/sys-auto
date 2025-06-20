@@ -1,20 +1,20 @@
-/* Reset */
+/* Général */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Général */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
@@ -22,34 +22,57 @@ body {
 /* Header */
 header {
   background-color: #222;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
 }
 
 header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.2em;
 }
 
-header nav {
-  margin-top: 20px;
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-header nav a {
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  padding: 10px 15px;
+  background-color: #444;
+  border-radius: 5px;
   font-weight: bold;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+nav a:hover {
+  background-color: #007BFF;
 }
 
 /* Sections */
-main section {
-  margin-bottom: 40px;
+section {
+  margin: 40px 0;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
 }
 
 h2 {
@@ -57,32 +80,35 @@ h2 {
   color: #007BFF;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
 /* Footer */
 footer {
-  background-color: #eee;
   text-align: center;
+  background-color: #eee;
   padding: 20px;
   font-size: 0.9em;
-  margin-top: 40px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 1.8em;
-  }
-
-  header nav a {
+  .menu-toggle {
     display: block;
-    margin: 10px 0;
   }
 
-  .container {
-    padding: 15px;
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background-color: #222;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
+
