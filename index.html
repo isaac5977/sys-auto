@@ -2,47 +2,71 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sys-Auto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sys-Auto – Services</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
   <header>
     <div class="container">
       <h1>Sys-Auto</h1>
-      <p>Spécialiste en électronique automobile embarquée</p>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <nav>
-        <a href="#">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#diagnostic">Diagnostic</a></li>
+          <li><a href="#reprog">Reprogrammation</a></li>
+          <li><a href="#cles">Clés</a></li>
+          <li><a href="#calculateur">Clonage ECU</a></li>
+          <li><a href="#optimisation">Optimisation</a></li>
+          <li><a href="#comdigitale">Com digitale</a></li>
+          <li><a href="#contenu">Contenu</a></li>
+          <li><a href="#siteweb">Site web</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="presentation">
-      <h2>Qui sommes-nous ?</h2>
-      <p>
-        Entreprise basée à Roubaix depuis 2022, spécialisée dans le diagnostic électronique, la reprogrammation moteur (OBD, Bench, Boot), la duplication de clés et le clonage de calculateurs.
-      </p>
+    <section id="diagnostic">
+      <h2>Diagnostic électronique</h2>
+      <p>Lecture des défauts via interface OBD et Autel. Accès aux calculateurs moteur, ABS, airbags, etc.</p>
     </section>
 
-    <section id="services">
-      <h2>Nos services</h2>
-      <ul>
-        <li>Diagnostic électronique complet</li>
-        <li>Reprogrammation moteur (OBD, Bench, Boot)</li>
-        <li>Duplication et programmation de clés</li>
-        <li>Clonage de calculateurs (ECU, BSI, etc.)</li>
-        <li>Optimisation des performances moteur</li>
-      </ul>
+    <section id="reprog">
+      <h2>Reprogrammation moteur</h2>
+      <p>Lecture et modification de fichiers ECU avec WinOLS, ECM Titanium, etc. Mode OBD, Bench ou Boot.</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email : contact@sys-auto.fr</p>
-      <p>Adresse : Roubaix, France</p>
+    <section id="cles">
+      <h2>Duplication de clés</h2>
+      <p>Duplication et reprogrammation de clés électroniques, y compris les systèmes anti-démarrage.</p>
+    </section>
+
+    <section id="calculateur">
+      <h2>Clonage de calculateurs</h2>
+      <p>Copie des données entre ECU/BSI en cas de panne, remplacement ou intervention technique.</p>
+    </section>
+
+    <section id="optimisation">
+      <h2>Optimisation moteur</h2>
+      <p>Optimisation des performances moteur (couple, puissance, consommation) en reprogrammation Stage 1.</p>
+    </section>
+
+    <section id="comdigitale">
+      <h2>Communication digitale</h2>
+      <p>Gestion de TikTok, Instagram, YouTube pour la visibilité. Création de vidéos techniques, photos, posts.</p>
+    </section>
+
+    <section id="contenu">
+      <h2>Création de contenu</h2>
+      <p>Production de visuels, flyers numériques, miniatures vidéo via Photoshop, Canva, CapCut, etc.</p>
+    </section>
+
+    <section id="siteweb">
+      <h2>Site web et SEO</h2>
+      <p>Création de site WordPress, optimisation SEO avec Yoast, Google Search Console, référencement local.</p>
     </section>
   </main>
 
